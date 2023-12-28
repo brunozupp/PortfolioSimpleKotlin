@@ -9,12 +9,11 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imgPerfil"
+        android:id="@+id/imgProfile"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:src="@drawable/perfil_image"
-        android:layout_marginBottom="16dp"
-        />
+        android:layout_marginBottom="16dp" />
 
     <TextView
         android:id="@+id/txtName"
@@ -24,17 +23,17 @@
         android:textStyle="bold"
         android:textSize="24dp"
         android:gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp" />
 
     <TextView
-        android:id="@+id/txtProfission"
+        android:id="@+id/txtProfession"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mobile Developer"
         android:textStyle="bold"
         android:textSize="20dp"
         android:gravity="center"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="32dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="SKILLS"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginRight="8dp" />
 
         <Button
             android:id="@+id/buttonEducation"
@@ -56,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="EDUCATION"
-            android:layout_marginLeft="8dp"/>
+            android:layout_marginLeft="8dp" />
 
     </LinearLayout>
 
