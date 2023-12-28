@@ -8,18 +8,29 @@ import android.widget.Button
 class MainActivity : AppCompatActivity() {
 
     private lateinit var buttonSkills: Button
+    private lateinit var buttonEducation: Button
+    private lateinit var buttonWork: Button
+    private lateinit var buttonAchievements: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         buttonSkills = findViewById(R.id.buttonSkills)
+        buttonEducation = findViewById(R.id.buttonEducation)
+        buttonWork = findViewById(R.id.buttonWork)
+        buttonAchievements = findViewById(R.id.buttonAchievements)
 
-        buttonSkills.setOnClickListener {
-            intent = Intent(this, SkillsActivity::class.java)
+        buttonSkills.setOnClickListener { goTo(SkillsActivity()) }
+        buttonEducation.setOnClickListener { goTo(EducationActivity()) }
+        buttonWork.setOnClickListener { goTo(WorkActivity()) }
+        buttonAchievements.setOnClickListener { goTo(AchievementsActivity()) }
 
-            startActivity(intent)
-        }
+    }
 
+    private fun goTo(activity: AppCompatActivity) {
+        intent = Intent(this, activity::class.java)
+
+        startActivity(intent)
     }
 }
