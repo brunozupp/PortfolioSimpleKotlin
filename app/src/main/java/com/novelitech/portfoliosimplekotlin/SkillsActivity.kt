@@ -10,6 +10,10 @@ class SkillsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skills)
 
+        setToolbar()
+    }
+
+    private fun setToolbar() {
         val toolbar = findViewById<Toolbar>(R.id.toolbarSkills)
 
         setSupportActionBar(toolbar)
@@ -20,7 +24,5 @@ class SkillsActivity : AppCompatActivity() {
         toolbar.setNavigationOnClickListener {
             finish()
         }
-
-
     }
 }
